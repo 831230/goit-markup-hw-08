@@ -5,7 +5,7 @@
 }
 
 body {
-    --main-font:var(--main-font)
+    font-family :var(--main-font);
     color: #212121
 }
 
