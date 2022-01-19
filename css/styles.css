@@ -1,11 +1,11 @@
 :root {
-    --main-font: font-family: 'Roboto', sans-serif;
-    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --main-color: #2196F3;
 }
 
 body {
-    --font-family: var(--main-font);
+    --main-font:var(--main-font)
     color: #212121
 }
 
@@ -26,6 +26,7 @@ body {
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .logo-part-blue {
     color: var(--main-color);  
@@ -42,6 +43,8 @@ body {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
+    color: #212121;
+    text-decoration: none;
 }
 
 .navigation-list-link:hover,
@@ -66,6 +69,7 @@ font-size: 14px;
 line-height: 1.143;
 letter-spacing: 0.02em;
 color: #757575;
+text-decoration: none;
 }
 /* END HEADER */
 
@@ -97,6 +101,10 @@ color: #757575;
     align-items: flex;
     letter-spacing: 0.06em;
     color: #ffffff;
+}
+
+.hero-header-btn-title {
+    color: white;
 }
 
 .main-description-title {
@@ -151,6 +159,7 @@ color: #757575;
     line-height: 1.714;
     letter-spacing: 0,03em;
     color: #ffffff;
+    text-decoration: none;
 }
 .address-link-mail,
 .address-link-phone {
@@ -158,6 +167,9 @@ color: #757575;
     line-height: 1.714;
     letter-spacing: 0,03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.address-link-phone {
+    text-decoration: none;
 }
 
 /* END FOOTER */
