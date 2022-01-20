@@ -82,9 +82,6 @@ img {
 .portfolio {
     margin-right: 46px;
 }
-/* .navigation-list-item::not(:last-child) {
-    margin-right: 46px;
-} */
 
 .navigation-list-link:hover,
 .navigation-list-link:focus,
@@ -99,6 +96,16 @@ img {
 .address-link-phone:hover,
 .address-link-phone:focus {
     color: var(--main-color);
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.contact-mail {
+    margin-right: 50px;
 }
 
 .contact-mail,
