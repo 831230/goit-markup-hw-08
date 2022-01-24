@@ -30,15 +30,17 @@ img {
 
 /* ====================HEADER=================== */
 
+.header {
+    background: #ffffff;
+}
+
 .header .container {
     display: flex;
+    margin: 0 auto;
     align-items: center;
-    width: 1600px;
-    background: #ffffff;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-left: 215px;
-    border-bottom: 1px solid #ececec;
+    width: 1200px;
+    height: 80px;
+    border-bottom: 1px solid #ececec; 
 }
 
 .logo {   
@@ -120,19 +122,19 @@ text-decoration: none;
 
 /* MAIN HERO */
 
+.hero,
+.footer {
+    background-color: #2f303a;
+}
+
 .hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #2f303a;
-    width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 280px;
-}
-
-.footer {
-    background-color: #2f303a;
 }
 
 .hero-header-title {
@@ -172,13 +174,13 @@ text-decoration: none;
 .main-description .container {
     display: flex;
     justify-content: center;
-    width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 94px;
 }
 
 .main-description-list {
     display: flex;
-    width: 1170px;
 }
 
 .main-description-item {
@@ -212,9 +214,10 @@ text-decoration: none;
 
 .main-what-we-do .container {
     display: flex;
-    width: 1600px;
-    justify-content: center;
-    padding-top: 94px;
+    width: 1200px;
+    margin: 0 auto;
+    /* justify-content: center; */
+    padding: 94px 15px;
 }
 
 .main-what-we-do-list {
@@ -239,12 +242,15 @@ text-decoration: none;
 
 /* OUR TEAM */
 
+.team {
+    background: #f5f4fa;    
+}
+
 .team .container {
     display: flex;
-    width: 1600px;
-    justify-content: center;
-    padding: 94px;
-    background: #f5f4fa;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 94px 15px;
 }
 
 .team-list {
@@ -280,15 +286,11 @@ text-decoration: none;
 
 /* =====================FOOTER===================== */
 
-.footer {
-    width: fit-content;
-}
 
 .footer .container {
     display: flex;
-    width: 1600px;
-    justify-content: center;
-    padding-left: 215px;
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
     flex-direction: column;
@@ -342,7 +344,8 @@ text-decoration: none;
 
 .filter .container {
     display: flex;
-    width: 1600px;
+    width: 1200px;
+    margin: 0 auto;
     padding-top: 94px;
     justify-content: center;
 }
@@ -352,7 +355,7 @@ text-decoration: none;
     width: 572px;
 }
 
-.filter-item:not(:last-child):not(:last-child) {
+.filter-item:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -408,16 +411,15 @@ text-decoration: none;
 }
 
 
-
-
 /* END SECTION FILTER */
 
 /* SECTION PROJECTS */
 
 .projects .container {
     display: flex;
-    width: 1600px;
-    padding-left: 215px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
     padding-top: 50px;
     padding-bottom: 94px;
 }
