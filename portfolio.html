@@ -35,8 +35,16 @@
             </ul>
         </nav>
         <div class="header-contact">
-            <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="contact-phone" href="tel:48111111111">+48 111 111 111</a>    
+            <a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com
+              <svg class="contact-mail-ico" width="16px" height="12px">
+                <use href="./images/sprite.svg#icon-header_mail_ico"></use>
+              </svg>
+            </a>
+            <a class="contact-phone" href="tel:48111111111">+48 111 111 111
+              <svg class="contact-phone-ico" width="10px" height="16px">
+                <use href="./images/sprite.svg#icon-header_phone_ico"></use>
+              </svg>
+            </a>    
         </div>
       </div>
     </header>
@@ -127,24 +135,58 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="index.html"><span class="logo-part-blue">Web</span><span class="logo-part-white">Studio</span></a>
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link-lokalization" href="https://goo.gl/maps/x3iuPh3qe1rizQfR7"
-                target="_blank">m. Warszawa, Aleje Jerozolimskie 21</a>
+        <div class="logo-and-adres-container">
+          <a class="logo" href="index.html"><span class="logo-part-blue">Web</span><span class="logo-part-white">Studio</span></a>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="address-link-lokalization" href="https://goo.gl/maps/x3iuPh3qe1rizQfR7"
+                  target="_blank">m. Warszawa, Aleje Jerozolimskie 21</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link-mail" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="address-item">
+                <a class="address-link-phone" href="tel:48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-socjal">
+          <h3 class="footer-socjal-header">dołącz do nas</h3>
+          <ul class="footer-socjal-list">
+            <li class="footer-socjal-item">
+              <a href="#" class="footer-socjal-link">
+                <svg class="footer-socjal-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-footer_social_instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link-mail" href="mailto:info@example.com">info@example.com</a>
+            <li class="footer-socjal-item">
+              <a href="#" class="footer-socjal-link">
+                <svg class="footer-socjal-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-footer_social_twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="address-item">
-              <a class="address-link-phone" href="tel:48111111111">+48 111 111 111</a>
+            <li class="footer-socjal-item">
+              <a href="#" class="footer-socjal-link">
+                <svg class="footer-socjal-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-footer_social_facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socjal-item">
+              <a href="#" class="footer-socjal-link">
+                <svg class="footer-socjal-icon" width="20px" height="20px">
+                  <use href="./images/sprite.svg#icon-footer_social_linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-    </footer>
-
-    
+    </footer>    
 </body>
 </html>

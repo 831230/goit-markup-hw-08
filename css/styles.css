@@ -94,20 +94,32 @@ img {
 .hero-header-btn:hover,
 .hero-header-btn:focus,
 .address-link-mail:hover,
-.address-link-mail:focus,
-.address-link-phone:hover,
-.address-link-phone:focus {
+.address-link-mail:focus {
     color: var(--main-color);
+}
+
+.contact-mail:hover, 
+.contact-mail:focus,
+.contact-phone:hover,
+.contact-phone:focus {
+    fill: var(--main-color);
 }
 
 .header-contact {
     display: flex;
     align-items: center;
-    margin-left: 364px;
+    margin-left: 345px;
+}
+
+.contact-mail,
+.contact-phone {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .contact-mail {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .contact-mail,
@@ -119,6 +131,12 @@ letter-spacing: 0.02em;
 color: #757575;
 text-decoration: none;
 }
+
+.contact-mail-ico,
+.contact-phone-ico {
+    margin-right: 10px;
+}
+
  /* ==================END HEADER=================== */
 
  /* =====================MAIN======================= */
@@ -128,6 +146,15 @@ text-decoration: none;
 .hero,
 .footer {
     background-color: #2f303a;
+}
+
+.hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/main/hero_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
 .hero .container {
@@ -211,6 +238,24 @@ text-decoration: none;
     color: #757575;
 }
 
+.main-description-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+
+.main-description-icon-space {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #f5f4fa;
+    margin-bottom: 30px;
+}
+
+
 /* END MAIN DESCRIPTION */
 
 /* WHAT WE DO */
@@ -233,7 +278,8 @@ text-decoration: none;
 }
 
 .main-what-we-do-header,
-.team-header {
+.team-header,
+.customers-header {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.167;
@@ -261,6 +307,14 @@ text-decoration: none;
     padding-top: 50px;
 }
 
+.team-item {
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+            0px 1px 1px rgba(0, 0, 0, 0.14), 
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -272,6 +326,7 @@ text-decoration: none;
     /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 30px;
 }
 
 .team-personal-position {
@@ -281,9 +336,81 @@ text-decoration: none;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 10px;
 }
 
+.team-socjal-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-socjal-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+}
+
+.team-socjal-list-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-socjal-link:hover,
+.team-socjal-link:focus {
+    fill: #ffffff;
+    background-color: var(--main-color);
+}
 /* END OUR TEAM */
+
+/* OUR CUSTOMERS */
+
+.customers .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    margin-bottom: 94px;
+    margin-top: 94px;
+}
+
+.customers-header {
+    margin-bottom: 50px;
+}
+
+.customers-logo-list {
+    display: flex;
+}
+
+.customers-logo-item,
+.customers-logo-link {
+    display: flex;
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+}
+
+.customers-logo-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-logo-link:hover,
+.customers-logo-link:focus {
+    fill: #FFFFFF;
+    background-color: var(--main-color);
+}
+
+
 
 /* =====================END MAIN=================== */
 
@@ -296,7 +423,7 @@ text-decoration: none;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .container .logo {
@@ -335,6 +462,57 @@ text-decoration: none;
     text-decoration: none;
 }
 
+/* FOOTER SOCJAL START */
+
+.footer-socjal {
+    margin-left: 70px;
+}
+
+.footer-socjal-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+
+.footer-socjal-list {
+    display: flex;
+}
+
+.footer-socjal-item {
+    display: flex;
+}
+
+.footer-socjal-icon {
+    fill: #ffffff;
+}
+
+.footer-socjal-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.footer-socjal-link:focus,
+.footer-socjal-link:hover {
+    background-color: var(--main-color);
+}
+
+.footer-socjal-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+
+/* FOOTER SOCJAL END */
+
+
 /* =====================END FOOTER===================== */
 
 
@@ -344,6 +522,7 @@ text-decoration: none;
 /* ======================MAIN========================== */
 
 /* SECTION FILTER */
+
 
 .filter .container {
     display: flex;
@@ -411,6 +590,10 @@ text-decoration: none;
 .filter-button-5:focus {
     color: #ffffff;
     background-color: var(--main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 
 
@@ -453,6 +636,20 @@ text-decoration: none;
 .projects-list-project9 {
     margin-left: 30px;
     margin-top: 30px;
+}
+
+.projects-list-project1:hover,
+.projects-list-project2:hover,
+.projects-list-project3:hover,
+.projects-list-project4:hover,
+.projects-list-project5:hover,
+.projects-list-project6:hover,
+.projects-list-project7:hover,
+.projects-list-project8:hover,
+.projects-list-project9:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project1-header,
