@@ -151,7 +151,7 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
-    transition: color 250ms;
+    transition: color 250ms, fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -162,6 +162,8 @@ img {
 .contact-mail-ico,
 .contact-phone-ico {
     margin-right: 10px;
+    transition: color 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  /* ==================END HEADER=================== */
@@ -576,7 +578,46 @@ padding-bottom: 30px;
 
 /* =====================END FOOTER===================== */
 
+/* ----------MODAL WINDOW---------- */
 
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    transition: 400ms;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ----------END MODAL WINDOW---------- */
 
 /* ======================PORTFOLIO PAGE======================= */
 
