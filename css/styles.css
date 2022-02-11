@@ -78,10 +78,39 @@ img {
     letter-spacing: 0.02em;
     color: #212121;
     text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agencja, 
-.portfolio {
+.agencja::after {
+    content: "";
+    display: flex;
+    width: 53px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: relative;
+    top: 28px;
+}
+.portfolio::after {
+    content: "";
+    display: flex;
+    width: 58px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: relative;
+    top: 28px;
+}
+.kontakt::after {
+    content: "";
+    display: flex;
+    width: 53px;
+    height: 4px;
+    background-color: var(--main-color);
+    position: relative;
+    top: 28px;
+}
+
+.navigation-list-item:not(:last-child) {
     margin-right: 46px;
 }
 
@@ -116,20 +145,18 @@ img {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    transition: color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-mail {
     margin-right: 30px;
-}
-
-.contact-mail,
-.contact-phone {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.143;
-letter-spacing: 0.02em;
-color: #757575;
-text-decoration: none;
 }
 
 .contact-mail-ico,
@@ -277,6 +304,29 @@ text-decoration: none;
     margin-right: 30px;
 }
 
+.main-what-we-do-list-item {
+    position: relative;
+}
+.main-what-we-do-list-label {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+.label-item {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: top;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
 .main-what-we-do-header,
 .team-header,
 .customers-header {
@@ -354,6 +404,8 @@ padding-bottom: 30px;
     height: 44px;
     border-radius: 50%;
     fill: #afb1b8;
+    transition: fill 250ms, background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socjal-list-link:not(:last-child) {
@@ -388,7 +440,6 @@ padding-bottom: 30px;
     display: flex;
 }
 
-.customers-logo-item,
 .customers-logo-link {
     display: flex;
     box-sizing: border-box;
@@ -399,6 +450,8 @@ padding-bottom: 30px;
     align-items: center;
     justify-content: center;
     fill: #afb1b8;
+    transition: fill 250ms, border-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-logo-item:not(:last-child) {
@@ -457,7 +510,7 @@ padding-bottom: 30px;
 .address-link-phone {
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0,03em;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 .address-link-phone {
@@ -480,6 +533,10 @@ padding-bottom: 30px;
     padding-top: 12px;
 }
 
+.address-link-mail {
+    text-decoration: none;
+}
+
 .footer-socjal-list {
     display: flex;
 }
@@ -500,6 +557,8 @@ padding-bottom: 30px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socjal-link:focus,
@@ -553,7 +612,9 @@ padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
-    letter-spacing: 0,03em;
+    letter-spacing: 0.03em;
+    transition: color 250ms, background-color 250ms, box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* BODY BUTTON */
@@ -620,6 +681,8 @@ border-radius: 4px;
 }
 
 .project-header-space {
+    position: relative;
+    overflow: hidden;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -636,8 +699,46 @@ border-radius: 4px;
 .projects-list-project7,
 .projects-list-project8,
 .projects-list-project9 {
+    position: relative;
+    overflow: hidden;
     margin-left: 30px;
     margin-top: 30px;
+    transition: box-shadow 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-list-overlay {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294px;
+    padding-left: 24px;
+    padding-right: 45px;
+    background-color: rgba(33, 150, 243, 0.9);
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.overlay-description {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+}
+
+.projects-list-project1:hover .project-list-overlay,
+.projects-list-project2:hover .project-list-overlay,
+.projects-list-project3:hover .project-list-overlay,
+.projects-list-project4:hover .project-list-overlay,
+.projects-list-project5:hover .project-list-overlay,
+.projects-list-project6:hover .project-list-overlay,
+.projects-list-project7:hover .project-list-overlay,
+.projects-list-project8:hover .project-list-overlay,
+.projects-list-project9:hover .project-list-overlay {
+    transform: translateY(0);
 }
 
 .projects-list-project1:hover,
