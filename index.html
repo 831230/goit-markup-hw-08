@@ -468,15 +468,51 @@
               </svg>
             </button>
           </form>
-
         </div>
       </div>
     </footer>
+
 <!-- ====MODAL WINDOW==== -->
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button class="close-btn" type="button" data-modal-close>x</button>
+    <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
+    <form class="modal-form" name="modal-form">
+
+      <label for="modal-form-label-name" class="modal-form-label-name">
+        <span class="modal-form-name-title">Imie</span>
+        <input type="text" name="modal-form-input-name" id="modal-form-label-name">
+          <svg class="modal-form-name-ico" width="18px" height="18px">
+            <use href="./images/sprite2.svg#icon-modal_name_ico"></use>
+          </svg>
+        </input>
+      </label>
+
+      <label for="modal-form-label-phone" class="modal-form-label-phone">
+        <span class="modal-form-phone-title">Telefon</span>
+        <input type="tel" name="modal-form-input-phone" id="modal-form-label-phone">
+          <svg class="modal-form-phone-ico" width="18px" height="18px">
+            <use href="./images/sprite2.svg#icon-modal_phone_ico"></use>
+          </svg>
+        </input>
+      </label>
+
+      <label for="modal-form-label-email" class="modal-form-label-email">
+        <span class="modal-form-email-title">Email</span>
+        <input type="email" name="modal-form-input-email" id="modal-form-label-email">
+          <svg class="modal-form-email-ico" width="18px" height="18px">
+            <use href="./images/sprite2.svg#icon-modal_email_ico"></use>
+          </svg>
+        </input>
+      </label>
+
+      <label for="modal-form-label-textarea" class="modal-formlabel-textarea">
+        <span class="modal-form-textarea-title">Komentarz</span>
+        <textarea name="modal-form-textarea" id="modal-form-label-textarea" class="modal-form-textarea" placeholder="Wprowadź tekst"></textarea>
+      </label>
+
+    </form>
   </div>
 </div>
 
