@@ -459,7 +459,7 @@
           <form name="form-newsletter" class="form-newsletter">
             <label for="newsletter-user-email" class="newsletter-user-email" >
               <span class="form-newsletter-header">Zapisz się do newslettera</span>
-              <input type="email" name="email" id="newsletter-user-email" placeholder="E-mail">
+              <input type="email" name="email" id="newsletter-user-email" placeholder="E&#8208mail">
             </label>
             <button class="form-newsletter-btn" type="submit">
               <span class="form-newsletter-btn-title">Zapisz się</span>
@@ -482,35 +482,49 @@
 
       <label for="modal-form-label-name" class="modal-form-label-name">
         <span class="modal-form-name-title">Imie</span>
-        <input type="text" name="modal-form-input-name" id="modal-form-label-name">
+        <div class="modal-form-input-name-space">
           <svg class="modal-form-name-ico" width="18px" height="18px">
             <use href="./images/sprite2.svg#icon-modal_name_ico"></use>
           </svg>
-        </input>
+          <input type="text" name="modal-form-input-name" id="modal-form-label-name" class="modal-form-input-name"/>
+        </div>
       </label>
 
       <label for="modal-form-label-phone" class="modal-form-label-phone">
         <span class="modal-form-phone-title">Telefon</span>
-        <input type="tel" name="modal-form-input-phone" id="modal-form-label-phone">
+        <div class="modal-form-input-phone-space">
           <svg class="modal-form-phone-ico" width="18px" height="18px">
             <use href="./images/sprite2.svg#icon-modal_phone_ico"></use>
           </svg>
-        </input>
+          <input type="tel" name="modal-form-input-phone" id="modal-form-label-phone">
+        </div>
       </label>
 
       <label for="modal-form-label-email" class="modal-form-label-email">
         <span class="modal-form-email-title">Email</span>
-        <input type="email" name="modal-form-input-email" id="modal-form-label-email">
+        <div class="modal-form-input-email-space">
           <svg class="modal-form-email-ico" width="18px" height="18px">
             <use href="./images/sprite2.svg#icon-modal_email_ico"></use>
           </svg>
-        </input>
+          <input type="email" name="modal-form-input-email" id="modal-form-label-email">
+        </div>
       </label>
 
-      <label for="modal-form-label-textarea" class="modal-formlabel-textarea">
+      <label for="modal-form-label-textarea" class="modal-form-label-textarea">
         <span class="modal-form-textarea-title">Komentarz</span>
         <textarea name="modal-form-textarea" id="modal-form-label-textarea" class="modal-form-textarea" placeholder="Wprowadź tekst"></textarea>
       </label>
+
+      <input type="checkbox" name="modal-form-checkbox-policy" id="checkbox-policy" class="visually-hidden">
+      <label for="checkbox-policy">Oświadczam iż akceptuję &nbsp 
+          <span class="modal-form-checkbox-license-title">
+            <a href="#" class="modal-form-checkbox-license-title-regulations">Regulamin</a></span>&nbsp i &nbsp
+          <span class="modal-form-checkbox-license-title">
+            <a href="#" class="modal-form-checkbox-license-title-privacy-policy">Politykę Prywatności&#46</a></span></label>
+
+      <button class="modal-form-btn" type="submit">
+        <span class="modal-form-btn-title">Wyślij</span>
+      </button>
 
     </form>
   </div>
