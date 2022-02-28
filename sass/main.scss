@@ -1,0 +1,26 @@
+@import "./utils/visually-hidden";
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/containers";
+
+@import "./layout/index";
+@import "./layout/portfolio";
+@import "./layout/modal-window";
+
+@import "./components/logo";
+@import "./components/navigation-list";
+@import "./components/header-contact";
+@import "./components/footer-address";
+@import "./components/footer-socjal";
+@import "./components/footer-newsletter";
+@import "./components/modal-window-content";
+
+@import "./pages/home/hero_header";
+@import "./pages/home/main-description-list";
+@import "./pages/home/main-what-we-do-space";
+@import "./pages/home/team-space";
+@import "./pages/home/team-space__socjal";
+@import "./pages/home/customers";
+@import "./pages/portfolio/filter";
+@import "./pages/portfolio/projects";

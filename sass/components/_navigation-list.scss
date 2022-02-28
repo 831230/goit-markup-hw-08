@@ -1,0 +1,64 @@
+.navigation-list {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation-list__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+}
+
+.navigation-list__item--agencja {
+  &::after {
+    content: "";
+    display: flex;
+    width: 53px;
+    height: 4px;
+    background-color: $main-color;
+    position: relative;
+    top: 28px;
+  }
+}
+
+.navigation-list__item--portfolio {
+  &::after {
+    content: "";
+    display: flex;
+    width: 58px;
+    height: 4px;
+    background-color: $main-color;
+    position: relative;
+    top: 28px;
+  }
+}
+
+.navigation-list__item--kontakt {
+  &::after {
+    content: "";
+    display: flex;
+    width: 53px;
+    height: 4px;
+    background-color: $main-color;
+    position: relative;
+    top: 28px;
+  }  
+}
+
+
+.navigation-list__item {
+  &:not(:last-child) {
+    margin-right: 46px;
+}
+}
+

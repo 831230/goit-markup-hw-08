@@ -1,0 +1,28 @@
+.team-space__socjal-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-space__socjal-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $color-6;
+    transition: fill 250ms, background-color 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            fill: $color-1;
+            background-color: $main-color;
+        }    
+}
+
+.team-space__socjal-list-link {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }    
+}

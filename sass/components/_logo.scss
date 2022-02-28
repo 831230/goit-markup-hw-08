@@ -1,0 +1,18 @@
+.logo {   
+    margin-right: 93px;
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo__content--part-blue {
+    color: $main-color;
+}
+.logo__content--part-black {
+    color: $color-4;
+}
+.logo__content--part-white {
+    color: $color-1;
+}

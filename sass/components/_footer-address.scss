@@ -1,0 +1,31 @@
+.footer-address {
+    display: flex;
+    padding-top: 20px;
+    font-style: normal;
+}
+
+.footer-address__item{
+    &:not(:last-child) {
+        padding-bottom: 9px;
+}
+}
+
+.footer-address__link {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-address__link--lokalization {
+    color: $color-1;
+}
+.footer-address__link--mail,
+.footer-address__link--phone {
+    color: rgba(255, 255, 255, 0.6);
+        &:hover,
+        &:focus {
+            color: $main-color;
+        }
+}
+
