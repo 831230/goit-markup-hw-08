@@ -1,21 +1,21 @@
-.footer-newsletter {
+.footer__newsletter {
     display: flex;
     width: 570px;
     height: 86px;
     margin-left: 78px;
 }
 
-.footer-newsletter__form {
+.footer__newsletter-form {
     display: flex;
     align-items: flex-end;
 }
 
-.footer-newsletter__user-email {
+.footer__newsletter-user-email {
     display: flex;
     flex-direction: column;
 }
 
-.footer-newsletter__header {
+.footer__newsletter-header {
     font-style: bold;
     font-size: 14px;
     line-height: 16px;
@@ -25,7 +25,7 @@
     margin-bottom: 20px;
 }
 
-.footer-newsletter__input {
+.footer__newsletter-input {
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -38,7 +38,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-newsletter__button {
+.footer__newsletter-button {
     position: relative;
     width: 200px;
     height: 50px;
@@ -48,14 +48,14 @@
     margin-left: 12px;
 }
 
-.footer-newsletter__button-title {
+.footer__newsletter-button-title {
     margin-right: 24px;
     font-style: bold;
     font-size: 16px;
     color: $color-1;
 }
 
-.footer-newsletter__button-ico {
+.footer__newsletter-button-ico {
     position: absolute;
     top: 13px;
     fill: $color-1;

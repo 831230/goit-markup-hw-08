@@ -253,43 +253,43 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-address {
+.footer__address {
   display: flex;
   padding-top: 20px;
   font-style: normal;
 }
 
-.footer-address__item:not(:last-child) {
+.footer__address-item:not(:last-child) {
   padding-bottom: 9px;
 }
 
-.footer-address__link {
+.footer__address-link {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-.footer-address__link--lokalization {
+.footer__address-link--lokalization {
   color: #ffffff;
 }
 
-.footer-address__link--mail,
-.footer-address__link--phone {
+.footer__address-link--mail,
+.footer__address-link--phone {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-address__link--mail:hover, .footer-address__link--mail:focus,
-.footer-address__link--phone:hover,
-.footer-address__link--phone:focus {
+.footer__address-link--mail:hover, .footer__address-link--mail:focus,
+.footer__address-link--phone:hover,
+.footer__address-link--phone:focus {
   color: #2196F3;
 }
 
-.footer-socjal {
+.footer__socjal {
   margin-left: 70px;
 }
 
-.footer-socjal__header {
+.footer__socjal-header {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -299,19 +299,19 @@ button {
   padding-top: 12px;
 }
 
-.footer-socjal__list {
+.footer__socjal-list {
   display: flex;
 }
 
-.footer-socjal__item:not(:last-child) {
+.footer__socjal-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-socjal__icon {
+.footer__socjal-icon {
   fill: #ffffff;
 }
 
-.footer-socjal__link {
+.footer__socjal-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,28 +323,28 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-socjal__link:focus, .footer-socjal__link:hover {
+.footer__socjal-link:focus, .footer__socjal-link:hover {
   background-color: #2196F3;
 }
 
-.footer-newsletter {
+.footer__newsletter {
   display: flex;
   width: 570px;
   height: 86px;
   margin-left: 78px;
 }
 
-.footer-newsletter__form {
+.footer__newsletter-form {
   display: flex;
   align-items: flex-end;
 }
 
-.footer-newsletter__user-email {
+.footer__newsletter-user-email {
   display: flex;
   flex-direction: column;
 }
 
-.footer-newsletter__header {
+.footer__newsletter-header {
   font-style: bold;
   font-size: 14px;
   line-height: 16px;
@@ -354,7 +354,7 @@ button {
   margin-bottom: 20px;
 }
 
-.footer-newsletter__input {
+.footer__newsletter-input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -367,7 +367,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-newsletter__button {
+.footer__newsletter-button {
   position: relative;
   width: 200px;
   height: 50px;
@@ -377,14 +377,14 @@ button {
   margin-left: 12px;
 }
 
-.footer-newsletter__button-title {
+.footer__newsletter-button-title {
   margin-right: 24px;
   font-style: bold;
   font-size: 16px;
   color: #ffffff;
 }
 
-.footer-newsletter__button-ico {
+.footer__newsletter-button-ico {
   position: absolute;
   top: 13px;
   fill: #ffffff;

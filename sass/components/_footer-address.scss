@@ -1,27 +1,27 @@
-.footer-address {
+.footer__address {
     display: flex;
     padding-top: 20px;
     font-style: normal;
 }
 
-.footer-address__item{
+.footer__address-item {
     &:not(:last-child) {
         padding-bottom: 9px;
 }
 }
 
-.footer-address__link {
+.footer__address-link {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
 
-.footer-address__link--lokalization {
+.footer__address-link--lokalization {
     color: $color-1;
 }
-.footer-address__link--mail,
-.footer-address__link--phone {
+.footer__address-link--mail,
+.footer__address-link--phone {
     color: rgba(255, 255, 255, 0.6);
         &:hover,
         &:focus {
