@@ -1,11 +1,79 @@
-.header-contact {
-    display: flex;
-    align-items: center;
-    margin-left: 345px;
+@media screen and (min-width: 320px) {
+  .header-contact {
+    display: none;
+  }
+  // .header-mobile-menu {
+  //   display: block;
+  //   width: 40px;
+  //   height: 40px;
+    
+  // }
+  // .header-mobile-menu__link {
+  //   display: block;
+  //   width: 40px;
+  //   height: 40px;
+  //   color: $color-5;
+  //   fill: $secondary-color;
+
+  // }
+  // .header-mobile-menu__ico {
+  //   display: block;
+  //   width: 40px;
+  //   height: 40px;
+  //   color: rgb(0, 0, 0);
+  //   fill: aqua;
+
+  // } 
 }
 
-.header-contact__mail,
-.header-contact__phone {
+@media screen and (min-width: 738px) {
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 101px;
+  }
+  .header-contact__mail,
+  .header-contact__phone {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $color-5;
+    text-decoration: none;
+    transition: color 250ms, fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            fill: $main-color;
+            color: $main-color;
+        }
+  }
+
+  .header-contact__mail {
+      margin-bottom: 10px;
+  }
+
+  .header-contact__mail-ico,
+  .header-contact__phone-ico {
+    margin-right: 8px;
+    transition: color 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 345px;
+  }
+  .header-contact__mail,
+  .header-contact__phone {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -22,16 +90,20 @@
             fill: $main-color;
             color: $main-color;
         }
-}
+  }
 
-.header-contact__mail {
-    margin-right: 30px;
-}
+  .header-contact__mail {
+      margin-right: 30px;
+      margin-bottom: 0;
+  }
 
-.header-contact__mail-ico,
-.header-contact__phone-ico {
+  .header-contact__mail-ico,
+  .header-contact__phone-ico {
     margin-right: 10px;
     transition: color 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
+
 
