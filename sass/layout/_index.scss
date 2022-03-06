@@ -42,6 +42,38 @@
   .main-description .container {
     justify-content: center;
     padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  // WHAT WE DO START
+  .main-what-we-do .container {
+    display: none;
+  }
+
+  // OUR TEAM START
+ .team .container {
+    padding: 60px 0;
+  }
+
+.team {
+    background: $color-3;    
+  }
+
+// CUSTOMERS START
+  .customers .container {
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+// FOOTER START
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   }
 }
 
@@ -90,6 +122,28 @@
     justify-content: center;
     padding-top: 60px;
   }
+
+    // WHAT WE DO START
+  .main-what-we-do .container {
+    display: none;
+  }
+
+  // OUR TEAM START
+ .team .container {
+    padding: 94px 0;
+  }
+
+.team {
+    background: $color-3;    
+  }
+
+// CUSTOMERS START
+  .customers .container {
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -134,9 +188,24 @@
 
   // MAIN DESCRIPTION START
   .main-description .container {
-      // justify-content: center;
       padding-top: 94px;
   }  
+    // WHAT WE DO START
+  .main-what-we-do .container {
+    display: flex;
+    padding: 94px 15px;
+  }
+
+  // OUR TEAM START
+ .team .container {
+    padding: 94px 0;
+  }
+
+.team {
+    background: $color-3;    
+  } 
+
+
 }
 
 .hero,
@@ -144,27 +213,10 @@
     background-color: $hero-footer-bgcolor;
 }
 
-.main-what-we-do .container {
-    padding: 94px 15px;
-}
 
-.team .container {
-    padding: 94px 15px;
-}
 
-.team {
-    background: $color-3;    
-}
-
-.customers .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 94px;
-    margin-top: 94px;
-}
-
-.footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+// // FOOTER START
+// .footer .container {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }

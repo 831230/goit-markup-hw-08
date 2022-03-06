@@ -1,26 +1,25 @@
-.main-what-we-do-space__header {
+@media screen and (min-width: 1200px) {
+  .main-what-we-do-space__header {
     font-weight: bold;
     font-size: 36px;
     line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
-}
+  }
 
-.main-what-we-do-space__list {
+  .main-what-we-do-space__list {
     display: flex;
     padding-top: 50px;
-}
+  }
 
-
-
-.main-what-we-do-space__item {
+  .main-what-we-do-space__item {
     position: relative;
-        &:not(:last-child) {
-            margin-right: 30px;
-        }    
-}
+      &:not(:last-child) {
+        margin-right: 30px;
+      }    
+  }
 
-.main-what-we-do-space__label {
+  .main-what-we-do-space__label {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -29,8 +28,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(47, 48, 58, 0.8);
-}
-.main-what-we-do-space__label-content {
+  }
+  .main-what-we-do-space__label-content {
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -38,4 +37,5 @@
     letter-spacing: 3%;
     color: $color-1;
     text-transform: uppercase;
+  }    
 }

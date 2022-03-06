@@ -1,62 +1,112 @@
+
+@mixin footer__newsletter-form {
+  display: flex;
+  align-items: flex-end;
+}
+@mixin footer__newsletter-user-email {
+  display: flex;
+  flex-direction: column;
+}
+@mixin footer__newsletter-header {
+  font-style: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: $color-1;
+  margin-bottom: 20px;
+}
+@mixin footer__newsletter-input {
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: $hero-footer-bgcolor;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 0.6);
+}
+@mixin footer__newsletter-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: $main-color;
+  border: none;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+@mixin footer__newsletter-button-title {
+  margin-right: 24px;
+  font-style: bold;
+  font-size: 16px;
+  color: $color-1;
+}
+@mixin footer__newsletter-button-ico {
+  position: absolute;
+  top: 13px;
+  fill: $color-1;
+}
+
+
+
+
 .footer__newsletter {
-    display: flex;
-    width: 570px;
-    height: 86px;
-    margin-left: 78px;
+  margin-left: 78px;
 }
 
 .footer__newsletter-form {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .footer__newsletter-user-email {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__newsletter-header {
-    font-style: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 3%;
-    text-transform: uppercase;
-    color: $color-1;
-    margin-bottom: 20px;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: $color-1;
+  margin-bottom: 20px;
 }
 
 .footer__newsletter-input {
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: $hero-footer-bgcolor;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 3%;
-    color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: $hero-footer-bgcolor;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__newsletter-button {
-    position: relative;
-    width: 200px;
-    height: 50px;
-    background: $main-color;
-    border: none;
-    border-radius: 4px;
-    margin-left: 12px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: $main-color;
+  border: none;
+  border-radius: 4px;
+  margin-left: 12px;
 }
 
 .footer__newsletter-button-title {
-    margin-right: 24px;
-    font-style: bold;
-    font-size: 16px;
-    color: $color-1;
+  margin-right: 24px;
+  font-style: bold;
+  font-size: 16px;
+  color: $color-1;
 }
 
 .footer__newsletter-button-ico {
-    position: absolute;
-    top: 13px;
-    fill: $color-1;
+  position: absolute;
+  top: 13px;
+  fill: $color-1;
 }
