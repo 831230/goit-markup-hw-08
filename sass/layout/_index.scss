@@ -68,15 +68,20 @@
   }
 
 // FOOTER START
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero,
+  .footer {
+    background-color: $hero-footer-bgcolor;
   }
 }
-
+// --------------------738---------------------
 @media screen and (min-width: 738px) {
   .header .container {
     align-items: center;
@@ -144,8 +149,23 @@
     align-items: center;
     justify-content: center;
   }
+
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+  .hero,
+  .footer {
+    background-color: $hero-footer-bgcolor;
+  }
+
 }
 
+// --------------------1200---------------------
 @media screen and (min-width: 1200px) {
   .header .container {
     align-items: center;
@@ -205,18 +225,27 @@
     background: $color-3;    
   } 
 
+  // FOOTER START
+  .footer .container {
+    display: flex;
+    align-items: start;
+    flex-wrap: nowrap;
+    padding-top: 60px;
+    padding-bottom: 94px;
+  }
 
-}
+  .hero,
+  .footer {
+      background-color: $hero-footer-bgcolor;
+  }
 
-.hero,
-.footer {
+  .hero,
+  .footer {
     background-color: $hero-footer-bgcolor;
+  }
 }
 
 
 
-// // FOOTER START
-// .footer .container {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+
+
