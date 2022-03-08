@@ -1,5 +1,6 @@
 @mixin filter__button {
   background: $color-3;
+  border: none;
   border-radius: 4px;
   height: 38px;
   font-weight: 500;
@@ -27,7 +28,7 @@
   .filter__list {
     display: flex;
     flex-wrap: wrap;
-    width: 572px;
+    width: 392px;
     margin-top: -15px;
   }
 
@@ -45,30 +46,56 @@
   }
 }
 
-// --------------------738---------------------
-@media screen and (min-width: 738px) {
+// --------------------480---------------------
+@media screen and (min-width: 480px) {
+  .filter__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 392px;
+    margin-top: -15px;
+  }
 
+  .filter__item {
+    margin-top: 15px;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }    
+  }
+
+  .filter__button {
+    padding-right: 22px;
+    padding-left: 22px;
+    @include filter__button;    
+  }
+}
+
+// --------------------768---------------------
+@media screen and (min-width: 768px) {
+  .filter__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 645px;
+  }
+
+  .filter__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }    
+  }
 }
 
 // --------------------1200---------------------
 @media screen and (min-width: 1200px) {
-    
+    .filter__list {
+    display: flex;
+    width: 572px;
+  }
+
+  .filter__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }    
+  } 
 }
 
-
-// .filter__list {
-//   display: flex;
-//   width: 572px;
-// }
-
-// .filter__item {
-//   &:not(:last-child) {
-//     margin-right: 8px;
-//   }    
-// }
-
-// .filter__button {
-//   padding-right: 22px;
-//   padding-left: 22px;
-//   @include filter__button;    
-// }

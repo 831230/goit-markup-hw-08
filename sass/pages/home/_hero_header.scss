@@ -1,4 +1,19 @@
+// --------------------320---------------------
 @media screen and (min-width: 320px){
+  .hero-header__title {
+    width: 320px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-1;
+  }
+}
+
+// --------------------480---------------------
+@media screen and (min-width: 480px){
   .hero-header__title {
     width: 365px;
     font-weight: 900;
@@ -11,7 +26,8 @@
   }
 }
 
-@media screen and (min-width: 738px) {
+// --------------------768---------------------
+@media screen and (min-width: 768px) {
   .hero-header__title {
     width: 365px;
     font-weight: 900;
@@ -23,7 +39,7 @@
     color: $color-1;
 }
 }
-
+// --------------------1200---------------------
 @media screen and (min-width: 1200px) {
   .hero-header__title {
     width: 696px;
@@ -36,9 +52,6 @@
     color: $color-1;
   }
 }
-
-
-
 
 .hero-header__btn {
     width: 200px;

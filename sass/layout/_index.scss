@@ -1,3 +1,4 @@
+// --------------------320---------------------
 @media screen and (min-width: 320px) {
   .header .container {
     align-items: center;
@@ -6,6 +7,7 @@
     padding: 0 15px;
   }
   .header {
+    // padding: 0 15px;
     background: $color-1;
     border-bottom: 1px solid $color-2;
   }
@@ -81,18 +83,106 @@
     background-color: $hero-footer-bgcolor;
   }
 }
-// --------------------738---------------------
-@media screen and (min-width: 738px) {
+
+// --------------------480---------------------
+@media screen and (min-width: 480px) {
+  .header .container {
+    align-items: center;
+    height: 60px;
+    max-width: 480px;
+    padding: 0 15px;
+  }
+  .header {
+    // padding: 0 15px;
+    background: $color-1;
+    border-bottom: 1px solid $color-2;
+  }
+  .hero .container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 118px;
+    padding-bottom: 198px;
+}
+  // HERO BACKGROUND IMAGE START
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url(../images/main/hero_background_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/main/hero_background@2x_mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;    
+      }
+    }
+  // HERO BACKGROUND IMAGE END
+
+  // MAIN DESCRIPTION START
+  .main-description .container {
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  // WHAT WE DO START
+  .main-what-we-do .container {
+    display: none;
+  }
+
+  // OUR TEAM START
+ .team .container {
+    padding: 60px 0;
+  }
+
+.team {
+    background: $color-3;    
+  }
+
+// CUSTOMERS START
+  .customers .container {
+    padding: 60px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+// FOOTER START
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero,
+  .footer {
+    background-color: $hero-footer-bgcolor;
+  }
+}
+
+// --------------------768---------------------
+@media screen and (min-width: 768px) {
   .header .container {
     align-items: center;
     height: 80px;
-    max-width: 738px;
-    padding: 0 15px;
+    max-width: 768px;
   }
   .header {
     background: $color-1;
     border-bottom: 1px solid $color-2;
   }
+  
+  // HERO START
   .hero .container {
     flex-direction: column;
     align-items: center;
@@ -171,7 +261,6 @@
     align-items: center;
     height: 80px;
     max-width: 1200px;
-    padding: 0 15px;
   }
   .header {
     background: $color-1;
