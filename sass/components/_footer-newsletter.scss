@@ -60,13 +60,13 @@
 
   .footer__newsletter-input {
     @include footer__newsletter-input;
-    width: 450px;
+    width: 300px;
     margin-bottom: 20px;
   }
 
   .footer__newsletter-button {
     @include footer__newsletter-button;
-    margin-left: 12px;
+    margin-left: 0;
   }
 
   .footer__newsletter-button-title {
@@ -78,8 +78,8 @@
   }
 }
 
-// --------------------738---------------------
-@media screen and (min-width: 738px) {
+// --------------------480---------------------
+@media screen and (min-width: 480px) {
 
   .footer__newsletter-form {
     display: flex;
@@ -105,7 +105,46 @@
 
   .footer__newsletter-button {
     @include footer__newsletter-button;
-    margin-left: 12px;
+    margin-left: 0;
+  }
+
+  .footer__newsletter-button-title {
+    @include footer__newsletter-button-title;
+  }
+
+  .footer__newsletter-button-ico {
+    @include footer__newsletter-button-ico;
+  }
+}
+
+// --------------------768---------------------
+@media screen and (min-width: 768px) {
+
+  .footer__newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__newsletter-user-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__newsletter-header {
+    @include footer__newsletter-header;
+    text-align: center
+  }
+
+  .footer__newsletter-input {
+    @include footer__newsletter-input;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .footer__newsletter-button {
+    @include footer__newsletter-button;
+    margin-left: 0;
   }
 
   .footer__newsletter-button-title {

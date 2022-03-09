@@ -140,7 +140,7 @@
 
   // OUR TEAM START
  .team .container {
-    padding: 60px 0;
+    padding: 60px 15px;
   }
 
 .team {
@@ -149,7 +149,7 @@
 
 // CUSTOMERS START
   .customers .container {
-    padding: 60px 0;
+    padding: 60px 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -218,14 +218,14 @@
     padding-top: 60px;
   }
 
-    // WHAT WE DO START
+// WHAT WE DO START
   .main-what-we-do .container {
     display: none;
   }
 
-  // OUR TEAM START
+// OUR TEAM START
  .team .container {
-    padding: 94px 0;
+    padding: 94px 15px;
   }
 
 .team {
@@ -234,16 +234,17 @@
 
 // CUSTOMERS START
   .customers .container {
-    padding: 60px 0;
+    padding: 60px 15px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
   }
 
+  // FOOTER START
   .footer .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
     }
@@ -307,7 +308,7 @@
 
   // OUR TEAM START
  .team .container {
-    padding: 94px 0;
+    padding: 94px 15px;
   }
 
 .team {
@@ -320,7 +321,7 @@
     align-items: start;
     flex-wrap: nowrap;
     padding-top: 60px;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
   }
 
   .hero,

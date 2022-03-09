@@ -89,6 +89,7 @@
 @media screen and (min-width: 1200px) {
     .filter__list {
     display: flex;
+    flex-wrap: nowrap;
     width: 572px;
   }
 
