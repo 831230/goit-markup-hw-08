@@ -46,6 +46,14 @@
               </svg>
             </a>    
         </div>
+          <div class="header-mobile-menu">
+          <button class="header-mobile-menu__button" type="button" mobile-menu-open></button>
+          <!-- <a class="header-mobile-menu__link" href="#" mobile-menu-open >
+           <svg class="header-mobile-menu__ico" width="40px" height="40px">
+             <use href="./images/sprite.svg#header-mobile-menu__ico"></use>
+           </svg>
+          </a> -->
+        </div>
       </div>
     </header>
   
@@ -327,6 +335,50 @@
           </form>
         </div>
       </div>
-    </footer>    
+    </footer>
+    
+        <!-- ====MOBILE-MENU==== -->
+
+<div class="mobile-menu is-hidden" mobile-menu>
+  <button class="mobile-menu__close-btn" type="button" mobile-menu-close>x</button>
+  <ul class="mobile-menu__navigation-list">
+    <li class="mobile-menu__navigation-item">
+      <a href="index.html" class="mobile-menu__navigation-link">Agencja</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="portfolio.html" class="mobile-menu__navigation-link">Portfolio</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="" class="mobile-menu__navigation-link">Kontakt</a>
+    </li>
+  </ul>
+  <ul class="mobile-menu__contact-list">
+    <li class="mobile-menu__contact-item">
+      <a href="tel:48111111111" class="mobile-menu__contact-link mobile-menu__contact-link--phone">&#43;48&nbsp111&nbsp111&nbsp111</a>
+    </li>
+    <li class="mobile-menu__contact-item">
+      <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link mobile-menu__contact-link--mail">info&#64;devstudio.com</a>
+    </li>
+  </ul>
+  <ul class="mobile-menu__socjal-list">
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link">Instagram</a> 
+    </li>
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Twitter</a>
+    </li>
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Facebook</a>
+    </li>
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Linkedin</a>
+    </li>
+  </ul>
+</div>
+
+    <!-- ====END MOBILE MENU==== -->
+
+      <script src="./js/mobile-menu.js"></script>
+
 </body>
 </html>

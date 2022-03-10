@@ -14,46 +14,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
   <body>
 
     <header class="header">
       <div class="container">
-        <a class="logo" href="index.html"><span class="logo__content logo__content--part-blue">Web</span><span class="logo__content logo__content--part-black">Studio</span></a>
+        <a class="logo" href="index.html"><span class="logo__content logo__content--part-blue">Web</span><span class="logo__content logo__content--part-black">Studio</span></a>       
         <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-list__item navigation-list__item--agencja">
-                    <a class="navigation-list__link" href="#">Agencja</a>
-                </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="navigation-list__item">
-                    <a class="navigation-list__link" href="#">Kontakt</a>
-                </li>
-            </ul>
+          <ul class="navigation-list">
+            <li class="navigation-list__item navigation-list__item--agencja">
+              <a class="navigation-list__link" href="#">Agencja</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="#">Kontakt</a>
+            </li>
+          </ul>
         </nav>
         <div class="header-contact">
-            <a class="header-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com
-              <svg class="header-contact__mail-ico" width="16px" height="12px">
-                <use href="./images/sprite.svg#icon-header_mail_ico"></use>
-              </svg>
-            </a>
-            <a class="header-contact__phone" href="tel:48111111111">+48 111 111 111
-              <svg class="header-contact__phone-ico" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-header_phone_ico"></use>
-              </svg>
-            </a>    
-        </div>
-        <!-- <div class="header-mobile-menu">
-          <a href="#" class="header-mobile-menu__link">fgdf
-            <svg class="header-mobile-menu__ico" width="40px" height="40px">
-              <use href="./images/header/menu_mobile_ico.svg"></use>
+          <a class="header-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com
+            <svg class="header-contact__mail-ico" width="16px" height="12px">
+              <use href="./images/sprite.svg#icon-header_mail_ico"></use>
             </svg>
           </a>
-        </div> -->
+          <a class="header-contact__phone" href="tel:48111111111">+48 111 111 111
+            <svg class="header-contact__phone-ico" width="10px" height="16px">
+              <use href="./images/sprite.svg#icon-header_phone_ico"></use>
+            </svg>
+          </a>    
+        </div>
+        <div class="header-mobile-menu">
+          <button class="header-mobile-menu__button" type="button" mobile-menu-open></button>
+          <!-- <a class="header-mobile-menu__link" href="#" mobile-menu-open >
+           <svg class="header-mobile-menu__ico" width="40px" height="40px">
+             <use href="./images/sprite.svg#header-mobile-menu__ico"></use>
+           </svg>
+          </a> -->
+        </div>
       </div>
     </header>
 
@@ -501,66 +501,108 @@
     </footer>
 
 
-<!-- ====MODAL WINDOW==== -->
+    <!-- ====MOBILE-MENU==== -->
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="close-btn" type="button" data-modal-close>x</button>
-    <h2 class="modal__header">Zostaw swoje dane w formularzu poniżej</h2>
-    <form class="modal-form" name="modal-form">
-
-      <label for="modal-form-label-name" class="modal-form__label-name">
-        <span class="modal-form__title">Imie</span>
-        <div class="modal-form__input-space">
-          <svg class="modal-form__ico" width="18px" height="18px">
-            <use href="./images/sprite2.svg#icon-modal_name_ico"></use>
-          </svg>
-          <input type="text" name="modal-form-input-name" id="modal-form-label-name" class="modal-form__input"/>
-        </div>
-      </label>
-
-      <label for="modal-form-label-phone" class="modal-form-label-phone =modal-form__label-phone=">
-        <span class="modal-form__title">Telefon</span>
-        <div class="modal-form__input-space">
-          <svg class="modal-form__ico" width="18px" height="18px">
-            <use href="./images/sprite2.svg#icon-modal_phone_ico"></use>
-          </svg>
-          <input type="tel" name="modal-form-input-phone" id="modal-form-label-phone" class="modal-form__input">
-        </div>
-      </label>
-
-      <label for="modal-form-label-email" class="modal-form-label-email =modal-form__label-email=">
-        <span class="modal-form__title">Email</span>
-        <div class="modal-form__input-space">
-          <svg class="modal-form__ico" width="18px" height="18px">
-            <use href="./images/sprite2.svg#icon-modal_email_ico"></use>
-          </svg>
-          <input type="email" name="modal-form-input-email" id="modal-form-label-email" class="modal-form__input">
-        </div>
-      </label>
-
-      <label for="modal-form-label-textarea" class="modal-form__label-textarea">
-        <span class="modal-form__title">Komentarz</span>
-        <textarea name="modal-form-textarea" id="modal-form-label-textarea" class="modal-form__textarea" placeholder="Wprowadź tekst"></textarea>
-      </label>
-
-      <input type="checkbox" name="modal-form-checkbox-policy" id="checkbox-policy" class="visually-hidden modal-form__checkbox-input">
-      <label for="checkbox-policy" class="modal-form__checkbox-label">Oświadczam iż akceptuję &nbsp 
-          <span class="modal-form__checkbox-title">
-            <a href="#" class="modal-form__checkbox-link modal-form__checkbox-link--regulations">Regulamin</a></span>&nbsp i &nbsp
-          <span class="modal-form__checkbox-title">
-            <a href="#" class="modal-form__checkbox-link modal-form__checkbox-link--privacy-policy">Politykę Prywatności&#46</a></span></label>
-
-      <button class="button modal-form__button" type="submit">
-        <span class="modal-form__button-title">Wyślij</span>
-      </button>
-
-    </form>
-  </div>
+<div class="mobile-menu is-hidden" mobile-menu>
+  <button class="mobile-menu__close-btn" type="button" mobile-menu-close>x</button>
+  <ul class="mobile-menu__navigation-list">
+    <li class="mobile-menu__navigation-item">
+      <a href="index.html" class="mobile-menu__navigation-link">Agencja</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="portfolio.html" class="mobile-menu__navigation-link">Portfolio</a>
+    </li>
+    <li class="mobile-menu__navigation-item">
+      <a href="" class="mobile-menu__navigation-link">Kontakt</a>
+    </li>
+  </ul>
+  <ul class="mobile-menu__contact-list">
+    <li class="mobile-menu__contact-item">
+      <a href="tel:48111111111" class="mobile-menu__contact-link mobile-menu__contact-link--phone">&#43;48&nbsp111&nbsp111&nbsp111</a>
+    </li>
+    <li class="mobile-menu__contact-item">
+      <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link mobile-menu__contact-link--mail">info&#64;devstudio.com</a>
+    </li>
+  </ul>
+  <ul class="mobile-menu__socjal-list">
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link">Instagram</a> 
+    </li>
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Twitter</a>
+    </li>
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Facebook</a>
+    </li>
+    <li class="mobile-menu__socjal-item">
+      <a href="" class="mobile-menu__socjal-link mobile-menu__socjal-link--line">Linkedin</a>
+    </li>
+  </ul>
 </div>
 
-<script src="./js/modal.js"></script>
 
-<!-- ====END MODAL WINDOW==== -->
+    <!-- ====END MOBILE MENU==== -->
+
+    <!-- ====MODAL WINDOW==== -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>x</button>
+        <h2 class="modal__header">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="modal-form" name="modal-form">
+
+          <label for="modal-form-label-name" class="modal-form__label-name">
+            <span class="modal-form__title">Imie</span>
+            <div class="modal-form__input-space">
+              <svg class="modal-form__ico" width="18px" height="18px">
+                <use href="./images/sprite2.svg#icon-modal_name_ico"></use>
+              </svg>
+              <input type="text" name="modal-form-input-name" id="modal-form-label-name" class="modal-form__input"/>
+            </div>
+          </label>
+
+          <label for="modal-form-label-phone" class="modal-form-label-phone =modal-form__label-phone=">
+            <span class="modal-form__title">Telefon</span>
+            <div class="modal-form__input-space">
+              <svg class="modal-form__ico" width="18px" height="18px">
+                <use href="./images/sprite2.svg#icon-modal_phone_ico"></use>
+              </svg>
+              <input type="tel" name="modal-form-input-phone" id="modal-form-label-phone" class="modal-form__input">
+            </div>
+          </label>
+
+          <label for="modal-form-label-email" class="modal-form-label-email =modal-form__label-email=">
+            <span class="modal-form__title">Email</span>
+            <div class="modal-form__input-space">
+              <svg class="modal-form__ico" width="18px" height="18px">
+                <use href="./images/sprite2.svg#icon-modal_email_ico"></use>
+              </svg>
+              <input type="email" name="modal-form-input-email" id="modal-form-label-email" class="modal-form__input">
+            </div>
+          </label>
+
+          <label for="modal-form-label-textarea" class="modal-form__label-textarea">
+            <span class="modal-form__title">Komentarz</span>
+            <textarea name="modal-form-textarea" id="modal-form-label-textarea" class="modal-form__textarea" placeholder="Wprowadź tekst"></textarea>
+          </label>
+
+          <input type="checkbox" name="modal-form-checkbox-policy" id="checkbox-policy" class="visually-hidden modal-form__checkbox-input">
+          <label for="checkbox-policy" class="modal-form__checkbox-label">Oświadczam iż akceptuję &nbsp 
+              <span class="modal-form__checkbox-title">
+                <a href="#" class="modal-form__checkbox-link modal-form__checkbox-link--regulations">Regulamin</a></span>&nbsp i &nbsp
+              <span class="modal-form__checkbox-title">
+                <a href="#" class="modal-form__checkbox-link modal-form__checkbox-link--privacy-policy">Politykę Prywatności&#46</a></span></label>
+
+          <button class="button modal-form__button" type="submit">
+            <span class="modal-form__button-title">Wyślij</span>
+          </button>
+
+        </form>
+      </div>
+    </div>
+    <!-- ====END MODAL WINDOW==== -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
