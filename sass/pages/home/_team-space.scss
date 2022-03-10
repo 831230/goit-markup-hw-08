@@ -130,6 +130,7 @@
 
   .team-space__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     margin-left: 0;
   }
