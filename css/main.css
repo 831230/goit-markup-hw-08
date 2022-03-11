@@ -2636,6 +2636,9 @@ button {
   .project__item:hover .project__overlay {
     transform: translateY(0);
   }
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .project__overlay {
     position: absolute;
     display: flex;
@@ -2701,6 +2704,9 @@ button {
   .project__item:hover .project__overlay,
   .project__item:hover .project__overlay {
     transform: translateY(0);
+  }
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   .project__overlay {
     position: absolute;
@@ -2768,6 +2774,9 @@ button {
   .project__item:hover .project__overlay {
     transform: translateY(0);
   }
+  .project__item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .project__overlay {
     position: absolute;
     display: flex;
@@ -2832,6 +2841,9 @@ button {
   .project__item:hover .project__overlay,
   .project__item:hover .project__overlay {
     transform: translateY(0);
+  }
+  .project__item:not(:last-child) {
+    margin-bottom: 0;
   }
   .project__overlay {
     position: absolute;
