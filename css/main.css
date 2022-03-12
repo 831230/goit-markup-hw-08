@@ -2348,7 +2348,6 @@ button {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-right: 0;
     margin-bottom: 0;
   }
   .customers__link {
@@ -2372,6 +2371,9 @@ button {
     margin-right: 0;
     margin-bottom: 30px;
   }
+  .customers__item:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -2387,8 +2389,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    justify-content: space-between;
   }
   .customers__link {
     display: flex;
@@ -2408,8 +2409,11 @@ button {
     border-color: #2196F3;
   }
   .customers__item {
-    margin-right: 30px;
+    margin-right: 0;
     margin-bottom: 30px;
+  }
+  .customers__item:not(:last-child) {
+    margin-right: 0px;
   }
 }
 
@@ -2426,8 +2430,7 @@ button {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    justify-content: space-between;
   }
   .customers__link {
     display: flex;
@@ -2447,8 +2450,10 @@ button {
     border-color: #2196F3;
   }
   .customers__item {
-    margin-right: 30px;
     margin-bottom: 30px;
+  }
+  .customers__item:not(:last-child) {
+    margin-right: 0px;
   }
 }
 
@@ -2481,6 +2486,9 @@ button {
   .customers__link:hover, .customers__link:focus {
     fill: #2196F3;
     border-color: #2196F3;
+  }
+  .customers__item {
+    margin-bottom: 30px;
   }
   .customers__item:not(:last-child) {
     margin-right: 30px;
